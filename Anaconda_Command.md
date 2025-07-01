@@ -1,0 +1,33 @@
+## Anaconda 명령어
+
+
+- 업데이트
+    - base 모듈들 업데이트
+        - conda update -n base conda
+    - conda update anaconda
+    - conda update anaconda-navigator
+    - python -m pip install --upgrade pip
+- 가상환경 만들기
+    - conda create --name myenv python=3.8
+    - pip install -U openapi-whisper
+    - 삭제
+        - conda remove —name myenv —all
+- 개별 패키지 삭제
+    - conda remove [ 패키지 이름]
+- nltk
+    - pip install nltk
+    - nltk와 treebank data 받기
+        - **import** nltk
+        - nltk.download('treebank')
+    - pip install konlpy
+    - JPype (java + python 연동)
+- Scikit-learn
+    - conda install scikit-learn
+- Node.js 설치
+    - conda설치 : conda install nodejs
+    - node 버전 확인 : node -v
+    - npm버전 확인 : npm -v
+- Clean(클린)
+    - conda clean --packages
+    - conda clean --tarballs
+    - conda clean --all -y
